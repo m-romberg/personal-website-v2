@@ -11,8 +11,8 @@ function Biography(){
       <p className="Biography-paragraph">
       Most recently, I collaborated with peers to launch an expanded
       version two of Numbers API. Unmaintained for years with outdated,
-      undocumented code, we rebuiltthis application with modern tools,
-      switching from an Express.js backend to a Flask supported app.
+      undocumented code, we rebuilt the Express.js backend into cleaner,
+      more maintanable Flask application.
       </p>
       </p>
       <p className="Biography-paragraph">
