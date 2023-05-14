@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Homepage from "./Homepage";
 import LandingPage from "./LandingPage";
+import projects from './githubProjects';
 
 /** Site-wide routes.
  *
@@ -18,7 +19,7 @@ function RoutesList({enter}) {
   return (
     <div className="pt-5">
       <Routes>
-      <Route path="/madelynromberg" element={<Homepage/>} />
+      <Route path="/madelynromberg" element={<Homepage projects={projects}/>} />
       <Route path="/"element={<LandingPage enter={enter} />} />
       <Route path="*"element={<Navigate to="/" />} />
       </Routes>
