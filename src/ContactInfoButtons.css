@@ -9,6 +9,6 @@
 
 .ContactInfoButtons img:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 5px 5.5px 2.5px rgb(80, 76, 76);
+    box-shadow: 5px 5.5px 2.5px #EF709D;
     border-radius: 10%;
 }

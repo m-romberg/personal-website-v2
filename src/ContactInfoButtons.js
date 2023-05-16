@@ -30,7 +30,7 @@ function ContactInfoButtons() {
         <img src="/imgs/btns/icons8-github-50.png" alt="github url"></img>
       </Link>
       <Link to={LINKEDIN_URL}>
-        <img src="/imgs/btns/icons8-linkedin-50.png" alt="github url"></img>
+        <img src="/imgs/btns/icons8-linkedin-50.png" alt="linkedIn url"></img>
       </Link>
       <img className="ContactInfoButtons-email"
         src="/imgs/btns/icons8-email-50.png"
