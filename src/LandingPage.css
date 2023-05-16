@@ -1,0 +1,23 @@
+.LandingPage {
+    margin: 20%;
+    text-align: center;
+    display: flexbox;
+    flex-direction: column;
+}
+
+/* h2:hover {
+    cursor: pointer;
+} */
+
+.LandingPage-enter {
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.LandingPage-enter:hover {
+    /* transform: translate(-2px, -2px); */
+    /* box-shadow: 5px 5.5px 2.5px #00BFFF; */
+    -moz-box-shadow: 0 0 10px #00BFFF;
+    -webkit-box-shadow: 0 0 10px #00BFFF;
+    box-shadow: 0 0 10px #00BFFF;
+}

@@ -1,4 +1,5 @@
 import { Button } from "react-bootstrap";
+import "./LandingPage.css";
 
 /**
  * LandingPage
@@ -21,9 +22,10 @@ function LandingPage({ enter }) {
           <b>currently open to new opportunities.</b>
         </p>
       </p>
-      <Button onClick={enter}>
+      <h2 className="LandingPage-enter" onClick={enter}>
         ENTER
-      </Button>
+      </h2>
+
     </div>
   );
 }
