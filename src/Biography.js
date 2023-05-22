@@ -3,16 +3,18 @@ function Biography(){
   return (
     <section className="Biography">
       <p className="Biography-paragraph">
-      I'm a full-stack developer in <b>Los Angeles, California</b> with a passion for
+      I'm a <b>full-stack developer</b> in <b>Los Angeles, California</b> with a passion for
       contributing to revolutionary ideas and building meaningful projects.
       After completing two degrees at UCLA and a full stack web development
-      program, I am currently seeking work as a software engineer.
+      program, <b><i>I am currently seeking work as a software engineer.</i></b>
 
       <p className="Biography-paragraph">
-      Most recently, I collaborated with peers to launch an expanded
-      version two of Numbers API. Unmaintained for years with outdated,
-      undocumented code, we rebuilt the Express.js backend into cleaner,
-      more maintanable Flask application.
+      <b>Most recently,</b> I collaborated with peers to launch an <b>expanded
+      version two of Numbers API</b>. Unmaintained for years with outdated,
+      undocumented code, we rebuilt the <b>Express.js</b> backend into cleaner,
+      more maintanable <b>Flask application</b>. Notably, my partner and I
+      built a <b> web scraper</b> using <b>BeautifulSoup</b> to collect
+      facts on hundreds of names and enter them in a database.
       </p>
       </p>
       <p className="Biography-paragraph">
@@ -29,7 +31,7 @@ function Biography(){
       both. Now, I'm a full time programmer.
       </p>
       <p className="Biography-paragraph Biography-closer">
-      Let's do something incredible together, one line at a time.
+      <b>Let's do something incredible together, <i>one line of code at a time.</i></b>
       </p>
     </section>
   )

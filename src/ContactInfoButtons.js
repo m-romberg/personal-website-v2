@@ -22,7 +22,6 @@ function ContactInfoButtons() {
 
   return (
     <div className="ContactInfoButtons">
-    <h2 className="ContactInfoButtons-header"> Let's Connect </h2>
       <div className="ContactInfoButtons-msg">
         { isCopied && <p>{emailCopyMsg}</p>}
       </div>

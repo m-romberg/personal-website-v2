@@ -1,21 +1,25 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import RoutesList from './RoutesList';
-import { useNavigate } from 'react-router-dom';
+import Loading from './Loading';
 
 
 function App() {
-  console.log("inside app ")
-  const navigate = useNavigate();
+  console.log("inside app ");
+  const [isLoading, setIsLoading] = useState(true);
 
-  function enter (){
-    console.debug("inside enter")
-    navigate("/madelynromberg")
-  }
-  return (
-    <div className="App">
-      <RoutesList enter={enter}/>
-    </div>
-  );
+  // if (isLoading === true){
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000);
+  //   return () => clearTimeout(timer);
+  // }
+
+return (
+  <div className="App">
+    <RoutesList />
+  </div>
+);
 }
 
 export default App;

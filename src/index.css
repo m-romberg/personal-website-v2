@@ -6,8 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #2D4654; */
-  background-color: #004860;
+  background-color: #39393A;
 }
 
 p {
@@ -21,6 +20,17 @@ b {
 h1, h2, h3 {
   color: #EF709D;
 }
+
+
+h1 {
+  font-size: 400%;
+}
+
+h2 {
+  font-size: 300%;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

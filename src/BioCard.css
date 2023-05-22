@@ -1,0 +1,10 @@
+.BioCard {
+}
+
+Image {
+    display: inline-block;
+}
+
+Biography {
+    display: inline-flex;
+}
