@@ -1,10 +1,9 @@
-.BioCard {
-}
 
 Image {
-    display: inline-block;
+    
 }
 
-Biography {
-    display: inline-flex;
+.BioCard .signature {
+    transform: rotate(-3.5deg);
+    max-width: 30%;
 }

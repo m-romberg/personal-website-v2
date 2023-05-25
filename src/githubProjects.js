@@ -19,9 +19,15 @@ const github_p3 = {
 const github_p4 = {
   name: "Pix.ly Frontend",
   url: "https://github.com/m-romberg/pixly-frontend",
-  description: "Frontend photo editgi application built using React."
+  description: "Frontend photo editing application built using React."
 };
 
-const projects = [ github_p1, github_p2, github_p3, github_p4 ];
+const see_more = {
+  url: "https://github.com/m-romberg",
+  name: "Want to see more projects?",
+  description: "Click here."
+};
+
+const projects = [ github_p1, github_p2, github_p3, github_p4, see_more ];
 
 export default projects;

@@ -1,44 +1,49 @@
-.Navigation .nav-link  {
-    margin: 2%;
-    font-size: 120%;
-}
+
+.Navigation {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  }
 
 .Navigation a {
     text-decoration: none;
     color: #EEE5E9;
 }
 
-.Navigation-right {
-    margin-right: -50%;
+.Navigation img {
+    max-width: 40%;
 }
+
+.Navigation-nav{
+    display: flex;
+    position: relative;
+}
+
 .Navigation-Brand img{
     padding: 1%;
 }
 
 .Navigation-scroll {
-    margin: 1%;
+    margin: 10%;
     color: #EEE5E9;
     padding: 1%;
-
 }
 .Navigation-scroll:hover {
     cursor: pointer;
     transform: translate(-2px, -2px);
-    box-shadow: 5px 5.5px 2.5px #EF709D;
+    /* box-shadow: 5px 5.5px 2.5px #EF709D; */
     border-radius: 10%;
-}
-
-.Navigation-Resume {
-    text-decoration: none;
-    color: #EEE5E9;
-    border: 1px solid #00BFFF;
-    border-color: #00BFFF;
-    border-radius: 8%;
-    padding: 1%;
+    color: #EF709D;
 }
 
 .Navigation-Resume:hover {
     transform: translate(-2px, -2px);
     box-shadow: 5px 5.5px 2.5px #EF709D;
     border-radius: 10%;
+    color: #EF709D;
 }

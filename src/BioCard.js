@@ -10,10 +10,12 @@ function BioCard() {
     <section className='BioCard'>
             <Image className="BioCard-Profile-Pic"
               src="/imgs/professionalphoto.jpg"
-              rounded={true}
-              width={`300px`}>
+              width={`30%`}>
             </Image>
             <Biography className="BioCard-Biography" />
+            <div>
+              <img className='signature' src="https://fontmeme.com/permalink/230522/ce570d14c27f8534e2fa03b85baa1a44.png" alt="script-fonts" border="0"/>
+          </div>
     </section>
   );
 }

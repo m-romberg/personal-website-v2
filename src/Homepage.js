@@ -6,9 +6,7 @@ import Navigation from './Navigation';
 import IntroductionCard from './IntroductionCard';
 import "./Homepage.css";
 import Carousel from './Carousel';
-import projects from './githubProjects';
 
-const title = "Recent works";
 function Homepage({ projects }) {
   console.log("Homepage");
   const contactButtonsRef = useRef(null);
@@ -69,14 +67,14 @@ function Homepage({ projects }) {
       </section>
       <section className={`HomePage HomePage-projects ${isHidden ? "hidden" : ""}`}>
         <h2 ref={projectButtonsRef}> <b>2.</b> Checkout My Work on GitHub</h2>
-        <Carousel projects={projects} title={title} />
+        <Carousel projects={projects}/>
       </section>
       <section ref={contactButtonsRef}>
+        <h2>
+          <b className={`${isHidden ? "hidden" : ""}`}>3.</b> Let's Connect
+        </h2>
+        <ContactInfoButtons />
       </section>
-      <h2>
-        <b className={`${isHidden ? "hidden" : ""}`}>3.</b> Let's Connect
-      </h2>
-      <ContactInfoButtons />
     </div>
   );
 }

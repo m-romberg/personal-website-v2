@@ -7,16 +7,17 @@ function Biography(){
       contributing to revolutionary ideas and building meaningful projects.
       After completing two degrees at UCLA and a full stack web development
       program, <b><i>I am currently seeking work as a software engineer.</i></b>
+      </p>
 
-      <p className="Biography-paragraph">
+      {/**<p className="Biography-paragraph">
       <b>Most recently,</b> I collaborated with peers to launch an <b>expanded
       version two of Numbers API</b>. Unmaintained for years with outdated,
       undocumented code, we rebuilt the <b>Express.js</b> backend into cleaner,
       more maintanable <b>Flask application</b>. Notably, my partner and I
       built a <b> web scraper</b> using <b>BeautifulSoup</b> to collect
       facts on hundreds of names and enter them in a database.
-      </p>
-      </p>
+  </p>*/}
+
       <p className="Biography-paragraph">
       Throughout my time as a researcher in both chemistry and history,
       I constantly leveraged the power of code to discover, clean, and convey
