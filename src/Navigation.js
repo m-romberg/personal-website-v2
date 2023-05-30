@@ -1,134 +1,64 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav } from 'react-bootstrap';
 import "./Navigation.css";
-/** Navigation bar for site. Scrolls only.
- *
- *
- * Homepage => Navigation
- */
-//BROKEN: navbar needs help
+import { useState } from "react";
+
+
 function Navigation({ scrollContact, scrollProjects, scrollBio }) {
-  console.debug("Navigation");
+  // Navbar.js
+
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <Navbar
-      className="Navigation .navbar .navbar-expand{lg}"
-      bg="light"
-      expand="lg">
-      <Navbar.Brand className="Navigation-Brand" as={Link} to="/">
-        {/**<img src="/imgs/icons8-m-64.png" alt="M logo"></img>*/}
+    <nav className="navigation">
+      <a href="/" className="brand-name">
         <img
           src="https://fontmeme.com/permalink/230522/19188199589ae0a39c5b1f7eda6bd879.png"
           alt="script-fonts"
-          border="0" />
-      </Navbar.Brand>
-      <Nav className="Navigation-nav" >
-        <Navbar.Text
-          className="Navigation-scroll Navigation-Madelyn"
-          onClick={scrollBio}>
-          <b>1.</b> Meet Madelyn
-        </Navbar.Text>
-        <Navbar.Text
-          className="Navigation-scroll Navigation-Projects"
-          onClick={scrollProjects}>
-          <b>2.</b> Projects
-        </Navbar.Text>
-        <Navbar.Text
-          className="Navigation-scroll Navigation-Contact"
-          onClick={scrollContact}>
-          <b>3.</b> Contact
-        </Navbar.Text>
-        <Navbar.Text className="Navigation-scroll">
-        <a href="/files/Resume-Jan-2023.pdf"> <b>4.</b> Resume</a>
-        </Navbar.Text>
-      </Nav>
-    </Navbar>
+          border="0"
+        />
+      </a>
+      <button className="hamburger" onClick={() => {
+        setIsNavExpanded(!isNavExpanded);
+      }}
+      >
+        {/* icon from heroicons.com */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          viewBox="0 0 20 20"
+          fill="white"
+        >
+          <path
+            fillRule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </button>
+      <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li
+            onClick={scrollBio}>
+            <p><b>1.</b> Meet Madelyn</p>
+          </li>
+          <li
+            onClick={scrollProjects}>
+            <p><b>2.</b> Projects</p>
+          </li>
+          <li
+            onClick={scrollContact}>
+            <p><b>3.</b> Contact</p>
+          </li>
+          <li >
+            <p> <b>4.</b> Resume</p>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
-};
-
-// import React, { useState } from 'react';
-// import {
-//   Collapse,
-//   Navbar,
-//   NavbarToggler,
-//   NavbarBrand,
-//   Nav,
-//   NavItem,
-//   NavLink,
-//   UncontrolledDropdown,
-//   DropdownToggle,
-//   DropdownMenu,
-//   DropdownItem,
-//   NavbarText,
-// } from 'reactstrap';
-
-// function Navigation() {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   const toggle = () => setIsOpen(!isOpen);
-
-//   return (
-//     <div>
-//       <Navbar >
-//         <NavbarBrand href="/">reactstrap</NavbarBrand>
-//         <NavbarToggler onClick={toggle} />
-//         <Collapse isOpen={isOpen} navbar>
-//           <Nav className="me-auto" navbar>
-//             <NavItem>
-//               <NavLink href="/components/">Components</NavLink>
-//             </NavItem>
-//             <NavItem>
-//               <NavLink href="https://github.com/reactstrap/reactstrap">
-//                 GitHub
-//               </NavLink>
-//             </NavItem>
-//             <UncontrolledDropdown nav inNavbar>
-//               <DropdownToggle nav caret>
-//                 Options
-//               </DropdownToggle>
-//               <DropdownMenu right>
-//                 <DropdownItem>Option 1</DropdownItem>
-//                 <DropdownItem>Option 2</DropdownItem>
-//                 <DropdownItem divider />
-//                 <DropdownItem>Reset</DropdownItem>
-//               </DropdownMenu>
-//             </UncontrolledDropdown>
-//           </Nav>
-//           <NavbarText>Simple Text</NavbarText>
-//         </Collapse>
-//       </Navbar>
-//     </div>
-//   );
-// }
-
-
-
-// return (
-//   <nav className="Navigation navbar navbar-expand-md">
-//     <div className="container-fluid">
-//       <Link className="navbar-brand" to="/madelynromberg">
-//         Madelyn Romberg
-//       </Link>
-//       <div className="Navigation-right container-fluid">
-//         <NavLink onClick={scrollBio}>
-//           <Button className="Navigation-bio">
-//             Meet Madelyn
-//           </Button>
-//         </NavLink>
-
-//         <Button className="Navigation-projects" onClick={scrollProjects}>
-//           Projects
-//         </Button>
-//         <Button className="Navigation-contact" onClick={scrollContact}>
-//           Contact
-//         </Button>
-//         <Button className="nav-link" to="/">
-//           Resume
-//         </Button>
-//       </div>
-//     </div>
-//   </nav>
-// );
+}
 
 export default Navigation;
