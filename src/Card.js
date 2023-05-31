@@ -1,5 +1,6 @@
+import Container from 'react-bootstrap/Container';
+import 'bootstrap/dist/css/bootstrap.css';
 import "./Card.css";
-
 
 /** Card: displays image.
  *
@@ -15,18 +16,19 @@ import "./Card.css";
  * App --> Carousel --> Card
  */
 
-function Card({ title, url, description }) {
+function Card({ title, url, description, img }) {
 
   return (
-    <div className="Card">
+    <Container className="Card">
       <a href={url}>
         <h4 className="Card-title">{title}</h4>
+        <img src={img} alt={description}/>
         <small className="Card-small">
           {description}
         </small>
 
       </a>
-    </div>
+    </Container>
   );
 }
 

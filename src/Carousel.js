@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Container from 'react-bootstrap/Container';
+import 'bootstrap/dist/css/bootstrap.css';
 import "./Carousel.css";
 import Card from "./Card";
 
@@ -35,8 +37,8 @@ function Carousel({ projects }) {
   }
 
   return (
-    <div className="Carousel">
-      <div className="Carousel-main">
+    <Container className="Carousel">
+      <Container className="Carousel-main">
         <img
           className={`${leftIconHidden}`}
           src="/imgs/btns/icons8-arrow-50 (1).png"
@@ -47,6 +49,7 @@ function Carousel({ projects }) {
           description={currCard.description}
           url={currCard.url}
           title={currCard.name}
+          img={"/imgs/btns/icons8-arrow-50.png"}
         />
         <img
           className={`${rightIconHidden}`}
@@ -54,8 +57,8 @@ function Carousel({ projects }) {
           onClick={goForward}
           alt="go forward button"
         />
-      </div>
-    </div>
+      </Container>
+    </Container>
   );
 }
 

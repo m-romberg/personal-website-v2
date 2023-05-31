@@ -1,12 +1,7 @@
 .IntroductionCard {
     /* margin: 20%; */
-    text-align: left;
     display: flexbox;
     flex-direction: column;
-}
-
-.IntroductionCard-p {
-    font-size: 110%;
 }
 
 /* h2:hover {
