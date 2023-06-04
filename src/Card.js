@@ -22,7 +22,7 @@ function Card({ title, url, description, img }) {
     <Container className="Card">
       <a href={url}>
         <h4 className="Card-title">{title}</h4>
-        <img src={img} alt={description}/>
+        {/**<img src={img} alt={description}/>*/}
         <small className="Card-small">
           {description}
         </small>

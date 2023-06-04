@@ -1,14 +1,13 @@
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: #190B28;
 }
 
 .App {
-  background-color: #190B28;
+  background-color: white;
 }
 
 p {
-  color: #EEE5E9;
+  color: #190B28;
 }
 
 b {

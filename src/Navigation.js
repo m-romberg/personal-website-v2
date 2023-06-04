@@ -69,8 +69,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 const styles = {
-  "Navigation-Navbar":{backgroundColor: "#190B28", minWidth:"100%", justifyContent:"space-between"},
-  "Navlink":{color:"white"},
+  "Navigation-Navbar":{backgroundColor: "white", minWidth:"100%", justifyContent:"space-between"},
+  "Navlink":{color:"#190B28"},
   "Nav": {textAlign:"right"}
 }
 
@@ -97,7 +97,7 @@ function Navigation({ scrollContact, scrollProjects, scrollBio }) {
                 <Nav.Link style={styles.Navlink} onClick={scrollBio} >Meet Madelyn</Nav.Link>
                 <Nav.Link style={styles.Navlink} onClick={scrollProjects}>Projects</Nav.Link>
                 <Nav.Link style={styles.Navlink} onClick={scrollContact}>Contact me</Nav.Link>
-                <Nav.Link style={styles.Navlink} onClick={scrollContact}>Resume</Nav.Link>
+                <Nav.Link href="/files/MadelynRomberg-Resume-Current.pdf">Resume</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Col>

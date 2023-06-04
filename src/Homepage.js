@@ -53,6 +53,9 @@ function Homepage({ projects }) {
   const styles = {
     container:{
       paddingTop:"3%"
+    },
+    containerFooter:{
+      padding:"3%"
     }
   }
   return (

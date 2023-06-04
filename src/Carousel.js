@@ -49,7 +49,7 @@ function Carousel({ projects }) {
           description={currCard.description}
           url={currCard.url}
           title={currCard.name}
-          img={"/imgs/btns/icons8-arrow-50.png"}
+          img={""}
         />
         <img
           className={`${rightIconHidden}`}
