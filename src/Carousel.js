@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Container from 'react-bootstrap/Container';
+import { Row, Col, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import "./Carousel.css";
 import Card from "./Card";
@@ -39,24 +39,32 @@ function Carousel({ projects }) {
   return (
     <Container className="Carousel">
       <Container className="Carousel-main">
+        <Row>
+        <Col>
         <img
-          className={`${leftIconHidden}`}
+          className={`Carousel-arrow ${leftIconHidden}`}
           src="/imgs/btns/icons8-arrow-50 (1).png"
           onClick={goBack}
           alt="go backward button"
         />
+        </Col>
+        <Col>
         <Card
           description={currCard.description}
           url={currCard.url}
           title={currCard.name}
-          img={""}
+          img={currCard.img}
         />
+        </Col>
+        <Col>
         <img
-          className={`${rightIconHidden}`}
+          className={`Carousel-arrow ${rightIconHidden}`}
           src="/imgs/btns/icons8-arrow-50.png"
           onClick={goForward}
           alt="go forward button"
         />
+        </Col>
+      </Row>
       </Container>
     </Container>
   );

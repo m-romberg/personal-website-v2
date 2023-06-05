@@ -1,4 +1,4 @@
-import Container from 'react-bootstrap/Container';
+import { Row, Col, Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import "./Card.css";
 
@@ -19,15 +19,18 @@ import "./Card.css";
 function Card({ title, url, description, img }) {
 
   return (
-    <Container className="Card">
+    <Container style={{display: "flex", flexFlow: "row wrap", alignItems:'center'}} className="Card">
+    <Row>
       <a href={url}>
+      <Col>
         <h4 className="Card-title">{title}</h4>
-        {/**<img src={img} alt={description}/>*/}
+          <img className="Card-image" src={img} alt={description} />
         <small className="Card-small">
           {description}
         </small>
-
+      </Col>
       </a>
+    </Row>
     </Container>
   );
 }

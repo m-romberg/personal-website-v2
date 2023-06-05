@@ -1,6 +1,9 @@
 .Card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .Card-title {
@@ -14,10 +17,23 @@
 
   .Card-image {
     border-radius: 8px;
+    max-width:  100%;
+    max-height: 100%;
+    border: #190B28 solid 1px;
+    padding: 5%;
+  }
+  .Card-image-empty{
+    opacity: 0%;
+    border-radius: 8px;
+    max-width:  100%;
+    max-height: 100%;
+    padding: 5%;
   }
 
 .Card a {
+  display: flex;
   text-decoration: none;
   color: #190B28;
+  flex-direction: column;
 }
 

@@ -1,18 +1,29 @@
 .Carousel-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .Carousel-main img:hover {
-    cursor: pointer;
-    transform: rotate(-3.5deg);
-  }
+.Carousel-main .Carousel-arrow {
+  cursor: pointer;
+  margin: 10px;
+  margin-top: 25%;
+}
 
-  .hidden {
-    display: none;
-  }
+.Carousel-main .Carousel-arrow:hover {
+  cursor: pointer;
+  transform: rotate(-3.5deg);
+}
 
-  .bi {
-    font-size: 35px
-  }
+.Carousel-arrow-div{
+  align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bi {
+  font-size: 35px
+}
