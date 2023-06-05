@@ -94,10 +94,10 @@ function Navigation({ scrollContact, scrollProjects, scrollBio }) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav style={styles.Nav} >
-                <Nav.Link style={styles.Navlink} onClick={scrollBio} >Meet Madelyn</Nav.Link>
-                <Nav.Link style={styles.Navlink} onClick={scrollProjects}>Projects</Nav.Link>
-                <Nav.Link style={styles.Navlink} onClick={scrollContact}>Contact me</Nav.Link>
-                <Nav.Link href="/files/MadelynRomberg-Resume-Current.pdf">Resume</Nav.Link>
+                <Nav.Link className="Navigation-link" style={styles.Navlink} onClick={scrollBio} >Meet Madelyn</Nav.Link>
+                <Nav.Link className="Navigation-link" style={styles.Navlink} onClick={scrollProjects}>Projects</Nav.Link>
+                <Nav.Link className="Navigation-link" style={styles.Navlink} onClick={scrollContact}>Contact me</Nav.Link>
+                <Nav.Link className="Navigation-link" href="/files/MadelynRomberg-Resume-Current.pdf">Resume</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Col>
