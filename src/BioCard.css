@@ -1,9 +1,9 @@
 
 Image {
-    
+
 }
 
 .BioCard .signature {
     transform: rotate(-3.5deg);
-    max-width: 30%;
+    max-width: 50%;
 }
