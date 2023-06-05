@@ -29,7 +29,8 @@ const github_p4 = {
 const see_more = {
   url: "https://github.com/m-romberg",
   name: "Want to see more projects?",
-  description: "Click here."
+  description: "Click here.",
+  img:"/imgs/projects/SEEMORE.png"
 };
 
 const projects = [ github_p1, github_p2, github_p3, github_p4, see_more ];
