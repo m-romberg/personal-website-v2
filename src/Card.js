@@ -22,7 +22,10 @@ function Card({ title, url, description, img }) {
     <Container className="Card">
       <a href={url}>
         <h4 className="Card-title">{title}</h4>
-        {/**<img src={img} alt={description}/>*/}
+        {title !== "Want to see more projects?"
+          &&
+          <img className="Card-image" src={img} alt={description} />
+        }
         <small className="Card-small">
           {description}
         </small>

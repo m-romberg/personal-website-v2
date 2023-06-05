@@ -4,7 +4,11 @@
     justify-content: center;
   }
 
-  .Carousel-main img:hover {
+  .Carousel-main .Carousel-arrow{
+    cursor: pointer;
+  margin: 10px;
+  }
+  .Carousel-main .Carousel-arrow:hover {
     cursor: pointer;
     transform: rotate(-3.5deg);
   }

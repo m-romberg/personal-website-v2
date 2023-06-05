@@ -1,23 +1,36 @@
 .Card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .Card-title {
+    display: flex;
+    flex-direction: column;
     margin: 0 0 0.5em 0;
   }
 
   .Card-small {
+    display: flex;
     margin-top: 0.5em;
     font-style: italic;
+    flex-direction: column;
   }
 
   .Card-image {
+    display: flex;
     border-radius: 8px;
+    flex-direction: column;
+    max-width:  40%;
+    max-height: 40%;
   }
 
 .Card a {
+  display: flex;
   text-decoration: none;
   color: #190B28;
+  flex-direction: column;
 }
 

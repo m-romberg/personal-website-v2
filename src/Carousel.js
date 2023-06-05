@@ -40,7 +40,7 @@ function Carousel({ projects }) {
     <Container className="Carousel">
       <Container className="Carousel-main">
         <img
-          className={`${leftIconHidden}`}
+          className={`Carousel-arrow ${leftIconHidden}`}
           src="/imgs/btns/icons8-arrow-50 (1).png"
           onClick={goBack}
           alt="go backward button"
@@ -49,10 +49,10 @@ function Carousel({ projects }) {
           description={currCard.description}
           url={currCard.url}
           title={currCard.name}
-          img={""}
+          img={currCard.img}
         />
         <img
-          className={`${rightIconHidden}`}
+          className={`Carousel-arrow ${rightIconHidden}`}
           src="/imgs/btns/icons8-arrow-50.png"
           onClick={goForward}
           alt="go forward button"
