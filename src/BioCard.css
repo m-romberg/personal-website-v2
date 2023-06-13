@@ -1,9 +1,14 @@
 
-Image {
-
-}
-
 .BioCard .signature {
     transform: rotate(-3.5deg);
     max-width: 50%;
+}
+
+.BioCard {
+    margin-top: 3%;
+}
+
+.BioCard-Profile-Pic {
+    width: 75%;
+    border-radius: 50%;
 }
