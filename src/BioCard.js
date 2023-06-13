@@ -8,8 +8,8 @@ import "./BioCard.css";
  */
 function BioCard() {
   return (
-    <Container style={{display: "flex", flexFlow: "row wrap", alignItems:'center'}} className='BioCard'>
-      <Row>
+    <Container className='BioCard'>
+      <Row className='align-items-center'>
         <Col>
           <Image className="BioCard-Profile-Pic"
             src="/imgs/professionalphoto.jpg"
