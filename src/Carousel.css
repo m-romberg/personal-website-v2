@@ -6,8 +6,6 @@
 
 .Carousel-main .Carousel-arrow {
   cursor: pointer;
-  margin: 10px;
-  margin-top: 25%;
 }
 
 .Carousel-main .Carousel-arrow:hover {
@@ -17,6 +15,10 @@
 
 .Carousel-arrow-div{
   align-items: center;
+}
+
+.Carousel-img {
+  min-width: 200rem;
 }
 
 .hidden {
