@@ -37,35 +37,33 @@ function Carousel({ projects }) {
   }
 
   return (
-    <Container className="Carousel">
-      <Container className="Carousel-main">
-        <Row>
-        <Col>
-        <img
-          className={`Carousel-arrow ${leftIconHidden}`}
-          src="/imgs/btns/icons8-arrow-50 (1).png"
-          onClick={goBack}
-          alt="go backward button"
-        />
+    <Container className="Carousel-main">
+      <Row className="align-items-center">
+        <Col xs={{ span: 3 }}>
+          <img
+            className={`Carousel-arrow ${leftIconHidden}`}
+            src="/imgs/btns/icons8-arrow-50 (1).png"
+            onClick={goBack}
+            alt="go backward button"
+          />
         </Col>
-        <Col>
-        <Card
-          description={currCard.description}
-          url={currCard.url}
-          title={currCard.name}
-          img={currCard.img}
-        />
+        <Col xs={{ span: 6 }}>
+          <Card
+            description={currCard.description}
+            url={currCard.url}
+            title={currCard.name}
+            img={currCard.img}
+          />
         </Col>
-        <Col>
-        <img
-          className={`Carousel-arrow ${rightIconHidden}`}
-          src="/imgs/btns/icons8-arrow-50.png"
-          onClick={goForward}
-          alt="go forward button"
-        />
+        <Col xs={{ span: 3 }}>
+          <img
+            className={`Carousel-arrow ${rightIconHidden}`}
+            src="/imgs/btns/icons8-arrow-50.png"
+            onClick={goForward}
+            alt="go forward button"
+          />
         </Col>
       </Row>
-      </Container>
     </Container>
   );
 }
