@@ -12,8 +12,7 @@ function BioCard() {
       <Row className='align-items-center'>
         <Col lg={{span: 6}}>
           <Image className="BioCard-Profile-Pic"
-            src="/imgs/professionalphoto.jpg"
-            width={`70%`}>
+            src="/imgs/professionalphoto.jpg">
           </Image>
         </Col>
         <Col lg={{span: 6}}>
