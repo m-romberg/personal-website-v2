@@ -21,6 +21,13 @@
   min-width: 200rem;
 }
 
+.Carousel-Card {
+  max-width: 200rem;
+  min-width: 200rem;
+  max-height: 200rem;
+  min-height: 200rem;
+}
+
 .hidden {
   opacity: 0;
   pointer-events: none;
