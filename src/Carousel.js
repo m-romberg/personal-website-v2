@@ -53,6 +53,7 @@ function Carousel({ projects }) {
             url={currCard.url}
             title={currCard.name}
             img={currCard.img}
+            className="Carousel-Card"
           />
         </Col>
         <Col xs={{ span: 3 }}>
