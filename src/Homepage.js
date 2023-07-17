@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import BioCard from './BioCard';
-import ContactInfoButtons from './ContactInfoButtons';
-import Navigation from './Navigation';
-import IntroductionCard from './IntroductionCard';
+import BioCard from './biography/BioCard';
+import ContactInfoButtons from './contact/ContactInfoButtons.js';
+import Navigation from './routes-nav/Navigation';
+import IntroductionCard from './intro/IntroductionCard';
 import "./Homepage.css";
-import Carousel from './Carousel';
+import Carousel from './projects/Carousel';
 import { Container} from 'react-bootstrap';
 import { Footer } from './Footer';
 
